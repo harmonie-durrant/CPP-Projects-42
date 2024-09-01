@@ -2,5 +2,7 @@ CPP-00/ex00/megaphone
 CPP-00/ex01/phonebook
 CPP-00/ex02/account
 CPP-01/ex00/zombie
+CPP-01/ex01/moarbrainz
+CPP-01/ex02/hithisisbrain
 *.o
 *.log
