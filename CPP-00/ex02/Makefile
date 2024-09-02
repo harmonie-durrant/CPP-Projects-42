@@ -1,6 +1,5 @@
-SRC =	Account.cpp
-
-SRC	:= $(addprefix src/, $(SRC))
+SRC =	Account.cpp	\
+		tests.cpp	\
 
 OBJ = $(SRC:.cpp=.o)
 
