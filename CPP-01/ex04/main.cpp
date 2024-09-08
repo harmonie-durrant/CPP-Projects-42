@@ -5,7 +5,7 @@
 int replace(std::string filename, std::string s1, std::string s2)
 {
     int s1len = s1.length();
-    int found = 0;
+    std::size_t found = 0;
     std::string line;
 
     std::ifstream my_file(filename.c_str());
