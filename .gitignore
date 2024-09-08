@@ -1,6 +1,9 @@
+# CPP-00
 CPP-00/ex00/megaphone
 CPP-00/ex01/phonebook
 CPP-00/ex02/account
+
+# CPP-01
 CPP-01/ex00/zombie
 CPP-01/ex01/moarbrainz
 CPP-01/ex02/hithisisbrain
@@ -8,9 +11,17 @@ CPP-01/ex03/unnecessary_violence
 CPP-01/ex04/ft_sed
 CPP-01/ex05/harl
 CPP-01/ex06/harlFilter
+
+# CPP-02
 CPP-02/ex00/fixed
 CPP-02/ex01/fixed
 CPP-02/ex02/fixed
+
+# CPP-03
+CPP-03/ex00/clapTrap
+
+# CPP-04
+
 *.txt
 *.o
 *.log
