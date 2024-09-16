@@ -20,6 +20,9 @@ void addContact(Phonebook *phonebook)
 	std::cout << "Phone number: ";
 	std::getline(std::cin, str);
 	contact.setPhoneNumber(str);
+	std::cout << "Darkest Secret: ";
+	std::getline(std::cin, str);
+	contact.setSecret(str);
 	phonebook->setContact(contact);
 }
 
@@ -36,18 +39,22 @@ void searchContact(Phonebook *phonebook)
 	int count;
 
 	count = phonebook->getCount();
-	std::cout << "┌──────────┬──────────┐" << std::endl;
+	std::cout << "┌──────────┬──────────┬──────────┬──────────┐" << std::endl;
 	std::cout << "│" << std::setw(10) << std::right << "ID";
+	std::cout << "│" << std::setw(10) << std::right << "first name";
+	std::cout << "│" << std::setw(10) << std::right << "last name";
 	std::cout << "│" << std::setw(10) << std::right << "nickname" << "│" << std::endl;
-	std::cout << "├──────────┼──────────┤" << std::endl;
+	std::cout << "├──────────┼──────────┼──────────┼──────────┤" << std::endl;
 	for (int i=0; i < phonebook->getCount(); i++)
 	{
 		Contact contact;
 		contact = phonebook->getContact(i);
-		std::cout << "|" << std::setw(10) << i + 1;
-		std::cout << "|" << std::setw(10) << truncate(contact.getNickName()) << "|" << std::endl;
+		std::cout << "│" << std::setw(10) << i + 1;
+		std::cout << "│" << std::setw(10) << truncate(contact.getFirstName());
+		std::cout << "│" << std::setw(10) << truncate(contact.getLastName());
+		std::cout << "│" << std::setw(10) << truncate(contact.getNickName()) << "│" << std::endl;
 	}
-	std::cout << "└──────────┴──────────┘" << std::endl;
+	std::cout << "└──────────┴──────────┴──────────┴──────────┘" << std::endl;
 	if (count > 0)
 	{
 		std::cout << "Please enter an id for relevant information: ";
@@ -65,6 +72,7 @@ void searchContact(Phonebook *phonebook)
 		std::cout << "Last name - " << tmp.getLastName() << std::endl;
 		std::cout << "Nickname - " << tmp.getNickName() << std::endl;
 		std::cout << "Phone number - " << tmp.getPhoneNumber() << std::endl;
+		std::cout << "Darkest secret - " << tmp.getSecret() << std::endl;
 	}
 	else
 	{

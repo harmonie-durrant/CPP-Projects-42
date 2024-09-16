@@ -23,3 +23,9 @@ void Contact::setPhoneNumber(std::string number)
 	this->_phoneNumber = number;
 	return;
 }
+
+void Contact::setSecret(std::string secret)
+{
+	this->_darkestSecret = secret;
+	return;
+}
