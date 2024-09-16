@@ -6,6 +6,7 @@ int main(int ac, char const **av)
 	int	j;
 
 	i = -1;
+	j = 0;
 	if (ac < 2)
 	{
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
