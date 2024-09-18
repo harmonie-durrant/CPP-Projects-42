@@ -77,6 +77,7 @@ void searchContact(Phonebook *phonebook)
 	else
 	{
 		std::cout << "Table is empty!" << std::endl;
+		return ;
 	}
 	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
