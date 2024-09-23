@@ -17,12 +17,12 @@ class Fixed
 		// Operators
 		Fixed & operator=(const Fixed &assign);
 
-		int	getRawBits(void)
-		{
-			std::cout << "getRawBits member function called" << std::endl;
-			return this->_rawBits;
-		}
-		
+		// Getters
+		int	getRawBits(void) const;
+
+		// Setters
+		void setRawBits(int const raw);
+
 	private:
 		int					_rawBits;
 		static const int	_fractionalBits = 8;

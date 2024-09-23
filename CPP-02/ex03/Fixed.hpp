@@ -21,18 +21,18 @@ class Fixed
 		Fixed & operator=(const Fixed &assign);
 
 		//comparison operators
-		bool operator>(const Fixed &ref);
-		bool operator<(const Fixed &ref);
-		bool operator>=(const Fixed &ref);
-		bool operator<=(const Fixed &ref);
-		bool operator==(const Fixed &ref);
-		bool operator!=(const Fixed &ref);
+		bool operator>(const Fixed &ref) const;
+		bool operator<(const Fixed &ref) const;
+		bool operator>=(const Fixed &ref) const;
+		bool operator<=(const Fixed &ref) const;
+		bool operator==(const Fixed &ref) const;
+		bool operator!=(const Fixed &ref) const;
 
 		//arithmetic operators
-		Fixed operator+(const Fixed &ref);
-		Fixed operator*(const Fixed &ref);
-		Fixed operator-(const Fixed &ref);
-		Fixed operator/(const Fixed &ref);
+		Fixed operator+(const Fixed &ref) const;
+		Fixed operator*(const Fixed &ref) const;
+		Fixed operator-(const Fixed &ref) const;
+		Fixed operator/(const Fixed &ref) const;
 
 		//pre/post increment/decrement
 		Fixed & operator++(void);
